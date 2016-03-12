@@ -24,7 +24,7 @@ setup(
     version=find_version("constance_cli", "__init__.py"),
     #url="",
     description='Get/Set In-database config settings handled by Django Constance',
-    #long_description=read('README.rst'),
+    long_description=read('README.rst'),
     author='John Carter',
     author_email='developers@grabone.co.nz',
     #license='BSD',
