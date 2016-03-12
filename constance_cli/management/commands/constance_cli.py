@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from __future__ import print_function
+from django import VERSION
+from django.core.exceptions import ValidationError
 from django.core.management import BaseCommand, CommandError
 from django.utils.translation import ugettext_lazy as _
 from ...utils import get_constance_values, get_constance_value, set_constance_value
-from django.core.exceptions import ValidationError
+
 
 class Command(BaseCommand):
 
@@ -18,6 +20,11 @@ class Command(BaseCommand):
         group.add_argument("--set", dest='setting', nargs=2, metavar=('SETTING', 'VALUE',))
 
     def handle(self, *args, **options):
+
+        if VERSION < (1, 8):
+            # since we assume use of argparse
+            raise CommandError(_("Constance CLI requires Django 1.8 or later"))
+
         if options.get('setting'):
             raw_name = options.get('setting')[0]
 
