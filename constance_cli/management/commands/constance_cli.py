@@ -4,7 +4,7 @@ from __future__ import print_function
 from django.core.management import BaseCommand, CommandError
 from django.utils.translation import ugettext_lazy as _
 from ...utils import get_constance_values, get_constance_value, set_constance_value
-
+from django.core.exceptions import ValidationError
 
 class Command(BaseCommand):
 
@@ -35,6 +35,8 @@ class Command(BaseCommand):
                     set_constance_value(raw_name, raw_value)
                 except KeyError as e:
                     raise CommandError(raw_name + _(" is not defined in settings.CONSTANCE_CONFIG)"))
+                except ValidationError as e:
+                    raise CommandError(e)
 
         elif options.get('list'):
             for k, v in get_constance_values().items():
