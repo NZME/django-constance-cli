@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 import os
-import re
 import codecs
+import re
 from setuptools import setup, find_packages
 
 
@@ -12,8 +14,7 @@ def read(*parts):
 
 def find_version(*file_paths):
     version_file = read(*file_paths)
-    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
-                              version_file, re.M)
+    version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]", version_file, re.M)
     if version_match:
         return version_match.group(1)
     raise RuntimeError("Unable to find version string.")
@@ -22,33 +23,24 @@ def find_version(*file_paths):
 setup(
     name='django-constance-cli',
     version=find_version("constance_cli", "__init__.py"),
-    #url="",
     description='Get/Set In-database config settings handled by Django Constance',
     long_description=read('README.rst'),
-    author='John Carter',
-    author_email='developers@grabone.co.nz',
-    #license='BSD',
+    author='GrabOne',
     keywords='django constance cli'.split(),
-    platforms='any',
-    classifiers=[
-        #'Development Status :: 5 - Production/Stable',
-        'Environment :: Web Environment',
-        'Framework :: Django',
-        'Intended Audience :: Developers',
-        'Natural Language :: English',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Topic :: Utilities',
-    ],
     packages=find_packages(exclude=['tests', 'tests.*']),
+    platforms='any',
     include_package_data=True,
+    license='MIT',
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Development Status :: 3 - Alpha",
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent"
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.5",
+        "Framework :: Django",
+    ]
     zip_safe=False,
 )
