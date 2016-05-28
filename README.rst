@@ -7,6 +7,8 @@ Command-line interface for [django constance](https://github.com/jazzband/django
 Installation
 ------------
 
+::
+
     pip install django-constance-cli
 
 
