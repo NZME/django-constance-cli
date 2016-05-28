@@ -1,7 +1,7 @@
 Django Constance CLI
 ====================
 
-Command-line interface for [django constance](https://github.com/jazzband/django-constance/).
+Command-line interface for `django constance <https://github.com/jazzband/django-constance/>`.
 
 
 Installation
