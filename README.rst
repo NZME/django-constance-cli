@@ -12,4 +12,5 @@ Command-line interface for [django constance](https://github.com/jazzband/django
 
 ## Change Log ##
 
+* 0.0.2   Added basic tests
 * 0.0.1   Package created
