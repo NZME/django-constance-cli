@@ -9,10 +9,10 @@ from constance.admin import ConstanceForm
 def get_constance_values():
     # copied from constance.admin.ConstanceAdmin.changelist_view
     default_initial = ((name, options[0])
-        for name, options in settings.CONFIG.items())
+                       for name, options in settings.CONFIG.items())
     # Then update the mapping with actually values from the backend
     initial = dict(default_initial,
-        **dict(config._backend.mget(settings.CONFIG.keys())))
+                   **dict(config._backend.mget(settings.CONFIG.keys())))
 
     return initial
 

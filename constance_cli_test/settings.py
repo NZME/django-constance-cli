@@ -21,7 +21,6 @@ from django.utils import six
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -32,7 +31,6 @@ SECRET_KEY = 'ynq%5ko!zi68fg_asceq0c66j^c3tpgnewgl2$j-n=(vp93#d*'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -78,7 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'task_manager_test.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -90,7 +87,6 @@ DATABASES = {
 }
 
 CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
-
 
 # Constance test config, copied from https://github.com/jazzband/django-constance/blob/master/tests/settings.py
 
@@ -126,7 +122,6 @@ CONSTANCE_CONFIG = {
     'EMAIL_VALUE': ('test@example.com', 'An email', 'email'),
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
@@ -145,7 +140,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -158,7 +152,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -185,7 +178,6 @@ LOGGING = {
         },
     },
 }
-
 
 ################################################
 ### APPLICATION SPECIFIC OVERRIDES OR EXTRAS ###

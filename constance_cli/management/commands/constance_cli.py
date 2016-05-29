@@ -11,7 +11,6 @@ from ...utils import get_constance_values, get_constance_value, set_constance_va
 
 
 class Command(BaseCommand):
-
     help = _('Get/Set In-database config settings handled by Constance')
 
     def add_arguments(self, parser):

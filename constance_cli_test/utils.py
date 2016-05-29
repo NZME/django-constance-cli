@@ -4,5 +4,4 @@ from django.test import TransactionTestCase
 
 
 class DcCliUnitTest(TransactionTestCase):
-
     pass
