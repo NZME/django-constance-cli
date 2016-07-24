@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import os
 import codecs
+import os
 import re
+
 from setuptools import setup, find_packages
 
 
@@ -27,10 +28,12 @@ setup(
     long_description=read('README.rst'),
     author='GrabOne',
     keywords='django constance cli'.split(),
-    packages=find_packages(exclude=['tests', 'tests.*']),
+    packages=find_packages(exclude=['constance_cli_test*']),
+    install_requires=['django', 'django-constance'],
     platforms='any',
     include_package_data=True,
     license='MIT',
+    url='https://bitbucket.org/grabone/django-constance-cli',
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Development Status :: 3 - Alpha",

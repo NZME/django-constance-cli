@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 from __future__ import print_function
+from __future__ import unicode_literals
+
 from django import VERSION
 from django.core.exceptions import ValidationError
 from django.core.management import BaseCommand, CommandError
 from django.utils.translation import ugettext_lazy as _
+
 from ...utils import get_constance_values, get_constance_value, set_constance_value
 
 
 class Command(BaseCommand):
-
     help = _('Get/Set In-database config settings handled by Constance')
 
     def add_arguments(self, parser):
