@@ -7,7 +7,7 @@ env:
 - DJANGO_SETTINGS_ENVIRONMENT=test
 install:
 - pip install -U pip
-- pip install django-constance[database]
+- pip install django django-constance[database]
 script: ./manage.py test --noinput
 sudo: false
 deploy:
