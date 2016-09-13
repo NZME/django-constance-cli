@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2016 NZME
+#
+
 from __future__ import print_function
 from __future__ import unicode_literals
 
