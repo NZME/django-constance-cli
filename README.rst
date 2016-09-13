@@ -15,6 +15,7 @@ Installation
 Change Log
 ----------
 
+- 0.0.5   Travis -> PyPi
 - 0.0.4   Travis build
 - 0.0.3   Prepare for move to github
 - 0.0.2   Added basic tests
