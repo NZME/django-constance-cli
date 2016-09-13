@@ -8,13 +8,13 @@ env:
 install:
 - pip install -U pip
 - pip install django django-constance[database]
-script: ./manage.py test --noinput
+script: "./manage.py test --noinput"
 sudo: false
 deploy:
   provider: pypi
   user: nzme
   password:
-    secure: todo
+    secure: M3BFqpejg506hpd9d/VeEuWZJLh2svssiQR6S+Uv+907pdWljqk+vcW5MV34EYd+w5b5cubrnqy6eWj95N+L0dVLEssJ/mPJy/d4dZ9P7dOoX06dvQpQVLcU9vb0iu+31wyOs6vHgx3OJy5pEvgcOS8x4OIkKFjeJrAwMDX3TgVhMmcem/wkFLom551IxQ/txl1k4e2hmrNUp0xLx7RbhGGa3eoJk5KOppiXxT2XIiOckPn7UEY442PctS0kzlW/vev5o6vUrdkf3JxhEeptQ9wVWP/eQKrUoMX3hBOwIxx0JzVhcPIzV3+chR5dvCI7zWZBGowhZqR9DeYrh81SblaAVjmiGWKBoO1IjfbbKE/40bQSPhcaxOKWceFK+j05AOhkBJ78tETK1ID9c1LUXDLuH/czw0wL7snXjePW3bS0miFEfVctPLhEMKFQjYEb/UO8KJPJBTTY+W1uTuBiYeZQ25L0tctdQlpHnfVs0sOLHpz8C8+96TRgTIfTIq1mLi+llmo4cVcjeuMx1rWCtERd3b3ovQwdafiGEhJmOg58GF+Z/hgUW9RWqLfdV4l41vqdd6zN1nuMrtlDBbVkwgZMwd+xAzLsk4KiJQNAJ5UPHxkk/ePZcjNh1JzFaUm17kMfpFhpfG1XnMha9RgJbLQE477kVL/mjtr7nWYvR5U=
   on:
     branch: master
     tags: true
