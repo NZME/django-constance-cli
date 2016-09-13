@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2016 NZME
+#
 
 """
 Django settings for task_manager project.

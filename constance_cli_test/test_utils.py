@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2016 NZME
+#
 
 from django.core.exceptions import ValidationError
 

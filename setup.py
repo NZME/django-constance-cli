@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2016 NZME
+#
 
 import codecs
 import os
@@ -24,18 +27,17 @@ def find_version(*file_paths):
 setup(
     name='django-constance-cli',
     version=find_version("constance_cli", "__init__.py"),
+    author='NZME',
+    author_email='sysadmin@grabone.co.nz',
+    url='https://github.com/NZME/django-constance-cli',
     description='Get/Set In-database config settings handled by Django Constance',
     long_description=read('README.rst'),
-    author='GrabOne',
     keywords='django constance cli'.split(),
     packages=find_packages(exclude=['constance_cli_test*']),
     install_requires=['django', 'django-constance'],
     platforms='any',
     include_package_data=True,
-    license='MIT',
-    url='https://bitbucket.org/grabone/django-constance-cli',
     classifiers=[
-        "License :: OSI Approved :: MIT License",
         "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",

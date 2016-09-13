@@ -15,5 +15,6 @@ Installation
 Change Log
 ----------
 
+- 0.0.3   Prepare for move to github
 - 0.0.2   Added basic tests
 - 0.0.1   Package created
