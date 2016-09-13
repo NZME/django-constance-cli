@@ -3,10 +3,12 @@ python:
 - 2.7
 - 3.5
 - pypy
+env:
+- DJANGO_SETTINGS_ENVIRONMENT=test
 install:
 - pip install -U pip
-- pip install tox
-script: tox
+- pip install django-constance[database]
+script: ./manage.py test --noinput
 sudo: false
 deploy:
   provider: pypi
@@ -17,5 +19,5 @@ deploy:
     branch: master
     tags: true
     distributions: sdist bdist_wheel
-    repo: NZME/django-model-extra-data
+    repo: NZME/django-constance-cli
     condition: $TRAVIS_PYTHON_VERSION = "2.7"
