@@ -1,0 +1,21 @@
+language: python
+python:
+- 2.7
+- 3.5
+- pypy
+install:
+- pip install -U pip
+- pip install tox
+script: tox
+sudo: false
+deploy:
+  provider: pypi
+  user: nzme
+  password:
+    secure: todo
+  on:
+    branch: master
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: NZME/django-model-extra-data
+    condition: $TRAVIS_PYTHON_VERSION = "2.7"
