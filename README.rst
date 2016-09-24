@@ -15,6 +15,7 @@ Installation
 Change Log
 ----------
 
+- 0.0.6   Fix `--help` (doesn't like ugettext_lazy)
 - 0.0.5   Travis -> PyPi
 - 0.0.4   Travis build
 - 0.0.3   Prepare for move to github
