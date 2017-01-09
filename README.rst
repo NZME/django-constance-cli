@@ -6,7 +6,9 @@ Command-line interface for `django constance <https://github.com/jazzband/django
 Deprecation
 -----------
 
-django-constance-cli is deprecated, use django-constance>=1.3.4 instead.
+django-constance-cli is deprecated, the functionality is part of django-constance>=1.3.4.
+
+See https://github.com/jazzband/django-constance/pull/180
 
 
 Installation
