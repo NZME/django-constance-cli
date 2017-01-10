@@ -1,7 +1,14 @@
-Django Constance CLI
-====================
+Django Constance CLI - Deprecated
+=================================
 
 Command-line interface for `django constance <https://github.com/jazzband/django-constance/>`_.
+
+Deprecation
+-----------
+
+django-constance-cli is deprecated, the functionality is part of django-constance>=1.3.4.
+
+See https://github.com/jazzband/django-constance/pull/180
 
 
 Installation
@@ -15,6 +22,7 @@ Installation
 Change Log
 ----------
 
+- 0.0.7   Added deprecation warning
 - 0.0.6   Fix `--help` (doesn't like ugettext_lazy)
 - 0.0.5   Travis -> PyPi
 - 0.0.4   Travis build
